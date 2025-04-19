@@ -45,7 +45,7 @@ export default function HomePage() {
       <div className="flex gap-4 mb-10">
         <button onClick={goToSignup} className="bg-blue-600 hover:bg-blue-700 transition text-white px-6 py-3 rounded shadow">계정 생성</button>
         <button onClick={goToAdmin} className="bg-gray-800 hover:bg-gray-900 transition text-white px-6 py-3 rounded shadow">관리자 페이지</button>
-        <button onClick={goBack} className="bg-red-500 hover:bg-red-600 transition text-white px-6 py-3 rounded shadow">뒤로가기</button>
+        <button onClick={goBack} className="bg-gray-400 hover:bg-gray-500 transition text-white px-6 py-3 rounded shadow">뒤로가기</button>
       </div>
     </div>
   );
