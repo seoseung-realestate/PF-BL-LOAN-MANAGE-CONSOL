@@ -1,4 +1,3 @@
-
 {
   "name": "pf-map2",
   "version": "1.0.0",
@@ -10,12 +9,9 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.1"
+    "react-router-dom": "^6.22.2"
   },
   "devDependencies": {
-    "vite": "^5.0.0",
-    "tailwindcss": "^3.3.0",
-    "postcss": "^8.4.0",
-    "autoprefixer": "^10.4.0"
+    "vite": "^5.2.0"
   }
 }

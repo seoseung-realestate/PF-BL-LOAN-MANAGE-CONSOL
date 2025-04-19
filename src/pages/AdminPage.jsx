@@ -1,9 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function AdminPage() {
+  const navigate = useNavigate();
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <h1 className="text-3xl font-bold text-gray-800">관리자 페이지 (추후 구현 예정)</h1>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-400 via-blue-100 to-white px-4">
+      <h1 className="text-4xl font-bold mb-2 text-blue-900">PF-MAP2</h1>
+      <p className="text-lg text-blue-700 mb-6">프로젝트 파이낸싱 통합 콘솔 데모</p>
+      <div className="flex gap-4 mb-10">
+        <button onClick={() => navigate('/signup')} className="bg-blue-600 text-white px-6 py-3 rounded shadow">계정 생성</button>
+        <button onClick={() => navigate('/admin')} className="bg-gray-800 text-white px-6 py-3 rounded shadow">관리자 페이지</button>
+      </div>
     </div>
   );
 }
