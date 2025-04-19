@@ -26,10 +26,6 @@ export default function SignupForm() {
     alert("계정 생성 요청됨: " + JSON.stringify(formData, null, 2));
   };
 
-  const goBack = () => {
-    navigate("/");
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-500 via-blue-200 to-white flex items-center justify-center px-4 py-10">
       <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md w-full max-w-md space-y-4">
@@ -56,7 +52,7 @@ export default function SignupForm() {
           <button type="button" className="px-4 py-2 bg-gray-300 rounded">인증번호 발송</button>
         </div>
         <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded">계정 생성 요청</button>
-        <button type="button" onClick={goBack} className="w-full mt-2 bg-gray-400 text-white py-2 rounded">뒤로가기</button>
+        <button type="button" onClick={() => navigate("/")} className="w-full mt-2 bg-gray-400 text-white py-2 rounded">뒤로가기</button>
       </form>
     </div>
   );
